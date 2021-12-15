@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Check your prices and look at the differences on the pricing bar among monthly & yearly pays"/>
+  <meta name="robots" content="index.html, follow"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="./Assets/icon.png">
+  <title>Interactive Pricing Component</title>
+
+  <!--CSS files-->
+  <link rel="stylesheet" href="style.css"/>
+
+  <!--font family-->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet"/>
+
+</head>
+<body>
+  <header>
+    <h1>Simple, traffic-based pricing</h1>
+    <h2>Sign-up for our 30-day trial. No credit card required.</h2>
+  </header>
+
+  <main>
+    <div class="main-price">
+      <div class="price-subtitle">
+        <h3>100K PAGEVIEWS</h3>
+      </div>
+      <div class="price-bar" id="barContainer">
+        <!--code from video-->
+      </div>
+      <div class="price-quantity">
+        <h3 id="priceNumbers">$16.00</h3><span id="frequentlyOption">/month</span>
+      </div>
+    </div>
+
+    <div class="main-frequent">
+      <h3>Monthly Billing</h3>
+      <button id="button"><span></span></button>
+      <h3>Yearly Billing<span class="frequent__percent">25%</span></h3>
+    </div>
+
+    <div class="main-benefits">
+      <div class="benefits-benefits">
+        <ul>
+          <li><span></span>Unlimited websites</li>
+          <li><span></span>100% data ownership</li>
+          <li><span></span>Email reports</li>
+        </ul>
+      </div>
+      <div class="benefits-button">
+        <button>Start my trial</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

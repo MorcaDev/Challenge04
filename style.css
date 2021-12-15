@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+:root{
+    --familyFont    : 'Manrope', sans-serif;
+    --lightWeight   :600;
+    --heavyWeight   :800;
+}
+
+/*/////////////////////////////
+///////////////////////////////
+/////////////////////////////*/
+
+.attribution { font-size: 1.2rem; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
