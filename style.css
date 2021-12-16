@@ -152,7 +152,7 @@ main{
 
             border: none;
             border-radius: 10px;
-            background-color: rgba(15, 63, 153, 0.185);
+            background-color:  hsl(223, 50%, 87%);
         }
             .frequent__circle{
                 display: block;
@@ -163,6 +163,10 @@ main{
 
                 border-radius: 50%;
                 background-color: white;
+            }
+            .main-frequent button:hover{
+                cursor: pointer;
+                background-color:  hsl(174, 86%, 45%);
             }
         .frequent--year{
             position: relative;
@@ -240,8 +244,13 @@ main{
                 letter-spacing: 0.5px;
                 border: none;
                 border-radius: 24px;
-                color: rgba(190, 203, 228, 0.89);
+                color: rgb(190, 203, 228);
                 background-color: rgba(23, 31, 56, 0.925);
+            }
+            .benefits-button button:hover{
+                cursor: pointer;
+                color: rgba(226, 233, 245, 0.959); 
+                box-shadow: 0px 0px 10px rgba(60, 71, 104, 0.925);
             }
 
 /*/////////////////////////////
