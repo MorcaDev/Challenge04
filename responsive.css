@@ -38,6 +38,9 @@ main{
 
             order: 30
         }
+            .price-bar input{
+                width: 100%;
+            }
 
     .main-frequent{
         margin-bottom: 60px;
