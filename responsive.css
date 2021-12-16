@@ -1,0 +1,87 @@
+main{
+    height: 384px;
+    padding:  38px 32px 38px 32px;
+}
+
+    .main-price{
+        margin: 0px;
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+        .price-subtitle{
+            width: auto;
+            height: auto;
+            margin: 0px;
+
+            order: 10;
+        }
+        .price-quantity{
+            width: auto;
+            height: auto;
+            margin:0px;
+
+            order: 20
+        }
+            .price-quantity h3{
+                width: 102px;
+
+                font-size: 3.2rem;
+            }
+            .price-quantity span{
+                font-size: 1.5rem;
+            }
+        .price-bar{
+            margin: 23px 0px 36px 0px;
+
+            order: 30
+        }
+
+    .main-frequent{
+        margin-bottom: 60px;
+    }
+        .frequent--month{
+            font-size: 1.2rem;
+        }
+        .frequent--year{
+            position: relative;
+            font-size: 1.2rem;
+        }
+            .frequent__percent{
+                position: absolute;
+                top: -2px;
+                left: 76px;
+
+                width: 38px;
+                height: auto;
+
+                font-size: 1.1rem; 
+            }
+
+    .main-benefits{
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+        .benefits-benefits{
+            width: auto;
+            height: auto;
+            margin: 0px;
+        }
+            .benefits-benefits ul{
+                display: flex;
+                flex-flow: column nowrap;
+            }
+                .benefits-benefits ul li{
+                    text-align: left;
+                }
+        .benefits-button{
+            width: auto;
+            height: auto;
+        }
