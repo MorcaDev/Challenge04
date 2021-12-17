@@ -174,19 +174,28 @@ main{
         justify-content: center;
         align-items: center;
     }
-        .frequent--month{
+        .frequent__month{
             font-size: 1.1rem;
         }
-        .main-frequent button{
+        .frequent__button{
             width: 38px;
             height: 21px;
             margin: 0px 10px;
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-items: center;
 
             border: none;
             border-radius: 10px;
             background-color:  hsl(223, 50%, 87%);
         }
-            .frequent__circle{
+            .frequent__button:hover{
+                cursor: pointer;
+                background-color:  hsl(174, 86%, 45%);
+            }
+            .frequent--circle{
                 display: block;
 
                 width: 15px;
@@ -196,15 +205,11 @@ main{
                 border-radius: 50%;
                 background-color: white;
             }
-            .main-frequent button:hover{
-                cursor: pointer;
-                background-color:  hsl(174, 86%, 45%);
-            }
-        .frequent--year{
+        .frequent__year{
             position: relative;
             font-size: 1.1rem;
         }
-            .frequent__percent{
+            .frequent--percent{
                 position: absolute;
                 top: -2px;
                 left: 67px;
@@ -300,6 +305,16 @@ main{
     .attribution a { 
         color: hsl(228, 45%, 44%); 
     }
+
+/*/////////////////////////////
+///////////////////////////////
+/////////////////////////////*/
+
+.activate{
+    justify-content: flex-end;
+    background-color:  hsl(223, 50%, 87%);
+}
+
 
 /*/////////////////////////////
 ///////////////////////////////
