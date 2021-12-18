@@ -214,9 +214,9 @@ main{
                 top: -2px;
                 left: 67px;
 
-                display: block;
+                display: inline-block;
 
-                width: 38px;
+                width: 38px; 
                 height: auto;
                 padding: 3px 0px;
 
@@ -227,7 +227,6 @@ main{
                 color: orangered;
                 opacity: 0.6;
                 background-color: rgba(255, 102, 0, 0.18);
-            
             }
 
     .main-benefits{
@@ -313,6 +312,14 @@ main{
 .activate{
     justify-content: flex-end;
     background-color:  hsl(223, 50%, 87%);
+}
+.discount{
+    position: absolute;
+    top: -2px;
+    left: 75px;
+
+    width: 80px;
+    font-size: 1.1rem;
 }
 
 

@@ -45,23 +45,13 @@ main{
     .main-frequent{
         margin-bottom: 60px;
     }
-        .frequent--month{
+        .frequent__month{
             font-size: 1.2rem;
         }
-        .frequent--year{
+        .frequent__year{
             position: relative;
             font-size: 1.2rem;
         }
-            .frequent__percent{
-                position: absolute;
-                top: -2px;
-                left: 76px;
-
-                width: 38px;
-                height: auto;
-
-                font-size: 1.1rem; 
-            }
 
     .main-benefits{
         width: 100%;

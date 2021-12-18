@@ -1,7 +1,3 @@
-console.log('Hi dude')
-
-///////////////////////
-
 let numberOfViews   = document.getElementById("numberPages")
 let price           = document.getElementById("priceNumbers")
 let frequent        = document.getElementById("frequentlyOption")
@@ -9,6 +5,30 @@ let frequencyButton = document.getElementById("button")
 let frequentCircle  = document.getElementById("buttonCircle")
 let discountNumber  = document.getElementById("percentNumber")
 
+///////////////////////
+
+let changeDiscountMessage = () =>{
+
+    let browserWidth    = window.innerWidth
+
+    if( browserWidth >= 512 ){
+
+        discountNumber.textContent = "25% discount"
+        discountNumber.classList.add("discount")
+
+    }else{
+
+        discountNumber.textContent = "-25%"
+        discountNumber.classList.remove("discount")
+    }
+
+}
+
+changeDiscountMessage()
+
+window.addEventListener("resize",changeDiscountMessage)
+
+///////////////////////
 
 let changeFrequent = (ev) =>{
 
