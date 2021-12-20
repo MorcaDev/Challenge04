@@ -90,7 +90,7 @@ let backgroundChanges = () =>{
             bar.classList.replace("twenty-five","cero")
             break;
         case "1":
-            bar.classList.toggle("twenty-five")
+            bar.classList.add("twenty-five")
             bar.classList.remove("cero")
             break;
         case "2":
@@ -98,7 +98,7 @@ let backgroundChanges = () =>{
             bar.classList.remove("seventy-five")
             break;
         case "3":
-            bar.classList.toggle("seventy-five")
+            bar.classList.add("seventy-five")
             bar.classList.remove("one-hundred")
             break;
         case "4":
