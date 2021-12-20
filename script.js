@@ -166,3 +166,19 @@ let changeDiscountMessage = () =>{
 changeDiscountMessage()
 
 window.addEventListener("resize",changeDiscountMessage)
+
+///////////////////////////////
+/*       START BUTTON        */
+///////////////////////////////
+
+let startButton = document.getElementById("startButton")
+
+let alert = (ev) =>{
+    swal({
+        title: "Great choose!",
+        icon: "success",
+        button: "Ok",
+      });
+}
+
+startButton.addEventListener("click",alert)
