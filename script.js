@@ -17,31 +17,31 @@ let isYearly          = undefined;
 
 const changes  = [
     {
-        value : 1,
+        value : 0,
         pages : "10K",
         priceM : "$8.00",
         priceY : "$6.00",
     },
     {
-        value : 2,
+        value : 1,
         pages : "50K",
         priceM : "$12.00",
         priceY : "$9.00",
     },
     {
-        value : 3,
+        value : 2,
         pages : "100K",
         priceM : "$16.00",
         priceY : "$12.00",
     },
     {
-        value : 4,
+        value : 3,
         pages : "500K",
         priceM : "$24.00",
         priceY : "$18.00",
     },
     {
-        value : 5,
+        value : 4,
         pages : "1M",
         priceM : "$36.00",
         priceY : "$27.00",
@@ -79,24 +79,58 @@ let changeFrequent = (ev) =>{
 frequencyButton.addEventListener("click",changeFrequent)
 
 ///////////////////////////////
+/*    BACKGROUND OF INPUT    */
+///////////////////////////////
+let backgroundChanges = () =>{
+
+    let barValue = bar.value
+
+    switch (barValue) {
+        case "0":
+            bar.classList.replace("twenty-five","cero")
+            break;
+        case "1":
+            bar.classList.toggle("twenty-five")
+            bar.classList.remove("cero")
+            break;
+        case "2":
+            bar.classList.remove("twenty-five")
+            bar.classList.remove("seventy-five")
+            break;
+        case "3":
+            bar.classList.toggle("seventy-five")
+            bar.classList.remove("one-hundred")
+            break;
+        case "4":
+            bar.classList.replace("seventy-five","one-hundred")
+            break;
+        default:
+            break;
+
+    }
+
+}
+
+///////////////////////////////
 /*     CHANGES FROM INPUT    */
 ///////////////////////////////
 
 let getValue = (ev) =>{
 
     let barValue        = bar.value
-    let positionInArray = barValue - 1
 
-    let Currentpages   = changes[positionInArray].pages 
+    backgroundChanges()
+
+    let Currentpages   = changes[barValue].pages 
     let Currentprice    = undefined
 
     if (isYearly) {
 
-        Currentprice  = changes[positionInArray].priceY
+        Currentprice  = changes[barValue].priceY
 
     }else{
 
-        Currentprice  = changes[positionInArray].priceM
+        Currentprice  = changes[barValue].priceM
 
     }
 
